@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: black; /* Main container background */
+    padding: 5px;
+  }
+  
+  /* Inner container with a black background */
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black; /* Inner container background set to black */
+    padding: 20px;
+  }
+  
+  /* Reset border-radius for individual boxes */
+  .box {
+    border-radius: 0; /* No border-radius */
+  }
+  
+  .sub-container1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    align-items: stretch;
+  }
+  
+  /* A (Cardinal) */
+  .vertical-box {
+    background-color: #C41E3A; /* Cardinal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    height: 300px; /* Adjust height as needed */
+    border-radius: 10px 0 0 10px; /* Rounded corners for vertical boxes */
+  }
+  
+  /* Middle Container for B and C stacked */
+  .middle-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* B (#E9D3C0) */
+  .box-horizontal-top {
+    background-color: #E9D3C0; /* Soft Beige */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    height: 150px; /* Half the height of the vertical boxes */
+  }
+  
+  /* C (Black) */
+  .box-horizontal-bottom {
+    background-color: black; /* Black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    height: 150px;
+  }
+  
+  /* D (Floral Purple) */
+  .purple-box {
+    background-color: #A85EBE; /* Floral Purple */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    height: 300px;
+    border-radius: 0 10px 10px 0; /* Rounded corners for vertical box */
+  }
+  
+  /* Second Sub Container with E (Sea Green) larger than F (Beige) */
+  .sub-container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+  }
+  
+  /* E (Sea Green) */
+  .marge-box {
+    background-color: #77C66E; /* Sea Green */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    height: 150px;
+    border-radius: 10px 0 0 10px; /* Rounded corners for left box */
+  }
+  
+  /* F (#E9D3C0) */
+  .beige-box {
+    background-color: #E9D3C0; /* Soft Beige */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    height: 150px;
+    border-radius: 0 10px 10px 0; /* Rounded corners for right box */
+  }
+  
